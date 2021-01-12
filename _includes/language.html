@@ -1,0 +1,34 @@
+<div class="language">
+    <nav class="language-content">
+
+      {% assign done = false %}
+      
+      {% for languages in site.data.settings.language_mapper %}
+ 
+        {% for site_page in languages.pages %}
+          {% if page.url == site_page.url %} 
+            {% assign done = true %}
+            {% assign index = forloop.index0 %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
+        {% if done == true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+
+      {% if index == 4 %}
+        {% assign index = 0 %}
+      {% endif %}
+      
+      {% for new_item in site.data.settings.language_mapper %}
+        {% assign url = new_item.pages[index].url %}
+        {% if page.url == url or page.url == "/" and new_item.language == 'EN' %}
+        <a class="selected">{{ new_item.language }}</a>
+        {% else %}
+        <a href="{{ site.github.url }}{{ url }}">{{ new_item.language }}</a>
+        {% endif %}
+      {% endfor%}
+    </nav>
+</div>

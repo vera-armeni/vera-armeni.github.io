@@ -1,0 +1,19 @@
+<header class="masthead">
+  <h3 class="masthead-title">
+    {% assign done = false %}
+    {% for item in site.data.settings.language_mapper %}
+      {% for site_page in item.pages %}
+        {% if page.url == site_page.url %}
+    <a href="{{ site.github.url }}{{ item.pages.first.url }}">{{ item.title }} </a> 
+    <small class="masthead-subtitle">  &nbsp;&nbsp; {{ item.subtitle }}</small>
+          {% assign done = true %}
+        {% endif %}
+      {% endfor %}
+      {% if done == true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% include menu.html %}
+  </h3>
+  {% include language.html %}
+</header>

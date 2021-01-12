@@ -1,0 +1,16 @@
+---
+layout: default
+title: Home
+---
+
+<br>
+<br>
+<br>
+{% for item in site.data.settings.language_mapper %}
+    {% for site_page in item.pages %}
+        {% if page.url == site_page.url %}
+        <img src="{{ site.github.url }}/assets/img/{{ item.home_image.file }}">
+        <div class="post-date">{{ item.home_image.description }}</div>
+        {% endif %}
+    {% endfor %}
+{% endfor %}

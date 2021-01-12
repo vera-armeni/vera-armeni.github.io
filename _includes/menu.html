@@ -1,0 +1,23 @@
+<div class="menu">
+  <nav class="menu-content">
+    {% assign done = false %}
+    {% for item in site.data.settings.language_mapper %}
+      {% for site_page in item.pages %}
+        {% if page.url == site_page.url %}
+          {% assign page_set = item.pages%}  
+          {% assign done = true %}
+        {% endif %}
+      {% endfor %}
+      {% if done == true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% for item in page_set %}
+      {% if page.url == item.url %}
+        <a class="selected">{{ item.link_text }}</a>
+      {% else %}
+        <a href="{{ site.github.url }}{{ item.url }}">{{ item.link_text }}</a>
+      {% endif %}
+    {% endfor%}
+  </nav>
+</div>

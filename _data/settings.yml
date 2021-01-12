@@ -1,0 +1,71 @@
+# Change 'comments' to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: 'https-lenpaul-github-io-lagrange'
+
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+#google-ID: 'UA-112060364-1'
+google-ID: ''
+
+offices:
+  {
+    en: ['Berlin', 'Athens'],
+    de: ['Berlin', 'Athen'],
+    gr: ['Βερολίνο', 'Αθήνα']
+  }
+
+language_mapper:
+  - {language: 'EN',
+     home_image: {file: 'tree-tops-and-sky-guildford-castle.jpg', description: 'Tree Tops and Sky, Guildford Castle, J.M.W. Turner'},
+     title: 'Armeni',
+     subtitle: 'LAWYER',
+     pages: [
+       {url: '/index.html', link_text: ''},
+       {url: '/menu/offices.html', link_text: 'Offices'},
+       {url: '/menu/lawyer.html', link_text: 'Lawyer'},
+       {url: '/menu/notice.html', link_text: 'Legal Notice'},
+       
+       #{url: '/menu/blog.html', link_text: 'Blog'},
+       {url: '/', link_text: ''}
+     ]}
+  - {language: 'DE',
+     home_image: {file: 'tree-tops-and-sky-guildford-castle.jpg', description: 'Tree Tops and Sky, Guildford Castle, J.M.W. Turner'},
+     title: 'Armeni',
+     subtitle: 'DIKIGOROS',
+     pages: [
+       {url: '/index-d.html', link_text: ''},
+       {url: '/menu/offices-d.html', link_text: 'Kanzlei'},
+       {url: '/menu/lawyer-d.html', link_text: 'Dikigoros'},
+       {url: '/menu/notice-d.html', link_text: 'Impressum'}
+       ,
+       
+       #{url: '/menu/blog.html', link_text: 'Blog'}
+     ]}
+  - {language: 'GR',
+     home_image: {file: 'tree-tops-and-sky-guildford-castle.jpg', description: 'Tree Tops and Sky, Guildford Castle, J.M.W. Turner'},
+     title: 'ΑΡΜΕΝΗ',
+     subtitle: 'ΔΙΚΗΓΟΡΟΣ',
+     pages: [
+       {url: '/index-g.html', link_text: ''},
+       {url: '/menu/offices-g.html', link_text: 'Γραφεία'},
+       {url: '/menu/lawyer-g.html', link_text: 'Δικηγόρος'},
+       {url: '/menu/notice-g.html', link_text: 'Νομικές Πληροφορίες'},
+       
+       #{url: '/menu/blog.html', link_text: 'Blog'}
+     ]}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+#- {icon: 'linkedin', link: 'http://www.linkedin.com/in/lenpaul/'}
+- {icon: 'envelope', link: 'mailto:vera.armeni@gmail.com'}
+
+# Customize site text
+pagination:
+  next_page: 'Newer'
+  previous_page: 'Older'
+
+sharing_button_prompt: 'Feel free to share!'
+
+related_posts: 'You may also enjoy:'
+
+post_date_prefix: 'Written on'
