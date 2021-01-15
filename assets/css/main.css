@@ -89,8 +89,8 @@ hr {
 /*48em*/
 
 @media (max-width: 768px) {
-  .container {
-    width: 90vw;
+  .root {
+    width: 100vw;
   }
 }
 
