@@ -14,6 +14,12 @@ offices:
     gr: ['Βερολίνο', 'Αθήνα']
   }
 
+meta:
+  {
+    description: 'Paraskevi Armeni, Lawyer. Member of the Bar Associations of Athens and Berlin.',
+    keywords: 'Lawyer, Armeni, Vera Armeni, Paraskevi Armeni, Berlin, Athens, Charlottenburg, Haubachstr, Greek Lawyer in Berlin, Greek Lawyer in Germany, Griechischer Rechtsanwalt in Berlin, Griechische Rechtsanwältin in Berlin, Griechischer Rechtsanwalt in Deutschland, Griechische Rechtsanwältin in Deutschland, Ελληνας δικηγόρος στο Βερολίνο, Ελληνίδα Δικηγόρος στο Βερολίνο, Έλληνας Δικηγόρος στην Γερμανια, Ελληνίδα Δικηγόρος στην Γερμανία, Δικηγόρος Βερολίνο, Δικηγόρος Γερμανία, Δικηγόρος Βρανδεμβούργο, Δικηγόρος Αθήνα και Βερολίνο, Βέρα Αρμένη, Παρασκευή Αρμένη'
+  }
+
 language_mapper:
   - {language: 'EN',
      home_image: {file: 'tree-tops-and-sky-guildford-castle.jpg', description: 'Tree Tops and Sky, Guildford Castle, J.M.W. Turner'},
