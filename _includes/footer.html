@@ -1,3 +1,10 @@
 <footer class="footer">
-  <div class="post-date"><a href="{{ site.github.url }}/menu/lawyer.html">&#169; {{ site.title }} | {{ site.description }}</a></div>
+{% for item in site.data.settings.language_mapper %}
+  {% for site_page in item.pages %}
+      {% if page.url == site_page.url %}
+      <div class="post-date"><a href="{{ item.pages[2].url }}">&#169; {{ site.title }} | {{ site.description }}</a></div>
+      {% endif %}
+  {% endfor %}
+{% endfor %}
+
 </footer>
